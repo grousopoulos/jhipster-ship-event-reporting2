@@ -1,0 +1,3 @@
+org.springframework.test.context.ContextCustomizerFactory = \
+    com.falaisia.ship.eventreporting2.config.\
+    SqlTestContainersSpringContextCustomizerFactory
