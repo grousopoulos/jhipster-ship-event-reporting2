@@ -1,0 +1,25 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "voyage": {
+      "home": {
+        "title": "Voyages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Voyage",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Voyage",
+        "notFound": "No Voyages found"
+      },
+      "created": "Ένα νέο Voyage έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Voyage έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Voyage έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Voyage {{ id }};"
+      },
+      "detail": {
+        "title": "Voyage"
+      },
+      "id": "ID",
+      "number": "Number",
+      "ship": "Ship"
+    }
+  }
+}

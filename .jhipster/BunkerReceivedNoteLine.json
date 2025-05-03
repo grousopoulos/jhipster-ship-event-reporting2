@@ -1,0 +1,61 @@
+{
+  "annotations": {
+    "changelogDate": "20250503083019"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "quantity",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "unitOfMeasure",
+      "fieldType": "UnitOfMeasure",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "M_TONNES,M3"
+    },
+    {
+      "fieldName": "lowerCalorificValue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "sulphurContent",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "density",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "viscosity",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "waterContent",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "BunkerReceivedNoteLine",
+  "relationships": [
+    {
+      "otherEntityName": "bunkerReceivedNote",
+      "otherEntityRelationshipName": "lines",
+      "relationshipName": "bunkerReceivedNote",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "fuelType",
+      "relationshipName": "fuelType",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

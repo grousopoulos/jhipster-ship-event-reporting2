@@ -1,0 +1,26 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "fuelType": {
+      "home": {
+        "title": "Fuel Types",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Fuel Type",
+        "createOrEditLabel": "Create or edit a Fuel Type",
+        "notFound": "No Fuel Types found"
+      },
+      "created": "A new Fuel Type is created with identifier {{ param }}",
+      "updated": "A Fuel Type is updated with identifier {{ param }}",
+      "deleted": "A Fuel Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Fuel Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Fuel Type"
+      },
+      "id": "ID",
+      "name": "Name",
+      "fuelTypeCode": "Fuel Type Code",
+      "carbonFactory": "Carbon Factory"
+    }
+  }
+}

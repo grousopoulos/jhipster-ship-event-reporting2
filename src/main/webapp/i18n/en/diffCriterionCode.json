@@ -1,0 +1,13 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "DiffCriterionCode": {
+      "null": "",
+      "ON_BALLAST": "ON_BALLAST",
+      "ON_LADEN": "ON_LADEN",
+      "CARGO_HEATING": "CARGO_HEATING",
+      "DYNAMIC_POSITIONING": "DYNAMIC_POSITIONING",
+      "PASSENGER_TRANSPORT": "PASSENGER_TRANSPORT",
+      "FREIGHT_TRANSPORT": "FREIGHT_TRANSPORT"
+    }
+  }
+}

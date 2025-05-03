@@ -1,0 +1,25 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "classificationSociety": {
+      "home": {
+        "title": "Classification Societies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Classification Society",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Classification Society",
+        "notFound": "No Classification Societies found"
+      },
+      "created": "Ένα νέο Classification Society έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Classification Society έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Classification Society έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Classification Society {{ id }};"
+      },
+      "detail": {
+        "title": "Classification Society"
+      },
+      "id": "ID",
+      "code": "Code",
+      "name": "Name"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+id;document_date_and_time;speed_gps;document_display_number;leg;distance_travelled;hours_underway;event_status;loading_condition;cargo_carried;coordinates_latitude;coordinates_longitude;ships_heading;beaufort_no;weather_condition;swell;voyage_id
+1;2025-05-02T17:57:30;18116.72;hammock woot psst;12089;22988.86;24684.89;NOON;BALLAST;32463.59;"9050N";"18060W";tarry towards seagull;32332;blah;true;1
+2;2025-05-02T15:19:30;29677.19;acidic;9875;17066.36;5900.61;TRANSIT;BALLAST;31711.56;"5260N";"18060E";surprise lady;30968;lifestyle;false;2
+3;2025-05-03T03:54:32;15751.18;slide;16725;6954.87;23825.72;START;BALLAST;9080.01;"9060N";"18034W";laughter ill-fated through;13892;hmph whether rightfully;true;3
+4;2025-05-02T21:48:44;8472.99;honesty scarily;20081;6678.04;12141.88;DEPARTURE;LADEN;15632.65;"9029N";"18060W";favorite;17906;seagull what next;true;4
+5;2025-05-02T14:20:47;18845.93;case;18227;8491.28;11942.69;DEPARTURE;BALLAST;29615.18;"9060N";"18060W";longingly;17649;parallel longboat than;true;5
+6;2025-05-02T20:21:52;12540.71;excluding keel foolhardy;8843;25266.96;19708.93;START;LADEN;18943.98;"9060N";"16760E";ick;19617;behold;false;6
+7;2025-05-02T22:16:29;30356.21;apud;3221;21418.07;32541.77;START;LADEN;27893.85;"1617S";"07220E";furthermore;13299;yawningly;true;7
+8;2025-05-02T21:26:12;15793.48;gloat before;22067;1941.75;4985.08;TRANSIT;BALLAST;23981.92;"9060S";"15021W";openly meanwhile sunbeam;11855;pointless;true;8
+9;2025-05-03T07:27:24;32517.88;into inside;7067;7663.63;26557.78;DETAINING;LADEN;15716.59;"9060N";"03260E";to;19926;furthermore;false;9
+10;2025-05-02T16:17:47;17265.24;amid;14248;8036.49;5671.04;DEPARTURE;LADEN;6308.65;"7136N";"13260W";galvanize;3388;hm for;false;10

@@ -1,0 +1,9 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "LoadingCondition": {
+      "null": "",
+      "LADEN": "LADEN",
+      "BALLAST": "BALLAST"
+    }
+  }
+}

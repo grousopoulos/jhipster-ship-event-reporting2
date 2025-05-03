@@ -1,0 +1,35 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "consumptionLine": {
+      "home": {
+        "title": "Consumption Lines",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Consumption Line",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Consumption Line",
+        "notFound": "No Consumption Lines found"
+      },
+      "created": "Ένα νέο Consumption Line έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Consumption Line έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Consumption Line έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Consumption Line {{ id }};"
+      },
+      "detail": {
+        "title": "Consumption Line"
+      },
+      "id": "ID",
+      "quantity": "Quantity",
+      "unitOfMeasure": "Unit Of Measure",
+      "co2EmissionSourceTypeCode": "Co 2 Emission Source Type Code",
+      "lowerCalorificValue": "Lower Calorific Value",
+      "sulphurContent": "Sulphur Content",
+      "density": "Density",
+      "viscosity": "Viscosity",
+      "waterContent": "Water Content",
+      "portActivityCode": "Port Activity Code",
+      "diffCriterionCode": "Diff Criterion Code",
+      "eventReport": "Event Report",
+      "fuelType": "Fuel Type"
+    }
+  }
+}

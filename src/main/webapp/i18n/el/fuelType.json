@@ -1,0 +1,26 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "fuelType": {
+      "home": {
+        "title": "Fuel Types",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Fuel Type",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Fuel Type",
+        "notFound": "No Fuel Types found"
+      },
+      "created": "Ένα νέο Fuel Type έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Fuel Type έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Fuel Type έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Fuel Type {{ id }};"
+      },
+      "detail": {
+        "title": "Fuel Type"
+      },
+      "id": "ID",
+      "name": "Name",
+      "fuelTypeCode": "Fuel Type Code",
+      "carbonFactory": "Carbon Factory"
+    }
+  }
+}

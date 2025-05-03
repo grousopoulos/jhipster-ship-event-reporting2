@@ -1,0 +1,10 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "TechnicalEfficiencyCode": {
+      "null": "",
+      "EEDI": "EEDI",
+      "EIV": "EIV",
+      "NA": "NA"
+    }
+  }
+}

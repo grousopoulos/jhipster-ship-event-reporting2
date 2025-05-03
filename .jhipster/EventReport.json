@@ -1,0 +1,106 @@
+{
+  "annotations": {
+    "changelogDate": "20250503083020"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "documentDateAndTime",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "speedGps",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "documentDisplayNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "leg",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "distanceTravelled",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "hoursUnderway",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "eventStatus",
+      "fieldType": "EventStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "DEPARTURE,ARRIVAL,NOON,SOSP,EOSP,ANCHOR,START,SHIFTING,DRIFTING,TRANSIT,CONVOY,DETAINING,END,OTHER"
+    },
+    {
+      "fieldName": "loadingCondition",
+      "fieldType": "LoadingCondition",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "LADEN,BALLAST"
+    },
+    {
+      "fieldName": "cargoCarried",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "coordinatesLatitude",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "([0-8][0-9]|90)([0-5][0-9]|60)(N|S)"
+    },
+    {
+      "fieldName": "coordinatesLongitude",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "(0[0-9][0-9]|1[0-7][0-9]|180)([0-5][0-9]|60)(W|E)"
+    },
+    {
+      "fieldName": "shipsHeading",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beaufortNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "weatherCondition",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "swell",
+      "fieldType": "Boolean"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "EventReport",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "voyage",
+      "relationshipName": "voyage",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "consumptionLine",
+      "otherEntityRelationshipName": "eventReport",
+      "relationshipName": "lines",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "machineryOperationLine",
+      "otherEntityRelationshipName": "eventReport",
+      "relationshipName": "operationLines",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

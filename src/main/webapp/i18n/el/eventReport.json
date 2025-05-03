@@ -1,0 +1,41 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "eventReport": {
+      "home": {
+        "title": "Event Reports",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Event Report",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Event Report",
+        "notFound": "No Event Reports found"
+      },
+      "created": "Ένα νέο Event Report έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Event Report έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Event Report έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Event Report {{ id }};"
+      },
+      "detail": {
+        "title": "Event Report"
+      },
+      "id": "ID",
+      "documentDateAndTime": "Document Date And Time",
+      "speedGps": "Speed Gps",
+      "documentDisplayNumber": "Document Display Number",
+      "leg": "Leg",
+      "distanceTravelled": "Distance Travelled",
+      "hoursUnderway": "Hours Underway",
+      "eventStatus": "Event Status",
+      "loadingCondition": "Loading Condition",
+      "cargoCarried": "Cargo Carried",
+      "coordinatesLatitude": "Coordinates Latitude",
+      "coordinatesLongitude": "Coordinates Longitude",
+      "shipsHeading": "Ships Heading",
+      "beaufortNo": "Beaufort No",
+      "weatherCondition": "Weather Condition",
+      "swell": "Swell",
+      "voyage": "Voyage",
+      "lines": "Lines",
+      "operationLines": "Operation Lines"
+    }
+  }
+}

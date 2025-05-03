@@ -1,0 +1,25 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "classificationSociety": {
+      "home": {
+        "title": "Classification Societies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Classification Society",
+        "createOrEditLabel": "Create or edit a Classification Society",
+        "notFound": "No Classification Societies found"
+      },
+      "created": "A new Classification Society is created with identifier {{ param }}",
+      "updated": "A Classification Society is updated with identifier {{ param }}",
+      "deleted": "A Classification Society is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Classification Society {{ id }}?"
+      },
+      "detail": {
+        "title": "Classification Society"
+      },
+      "id": "ID",
+      "code": "Code",
+      "name": "Name"
+    }
+  }
+}

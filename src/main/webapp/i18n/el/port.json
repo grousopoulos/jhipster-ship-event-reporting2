@@ -1,0 +1,25 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "port": {
+      "home": {
+        "title": "Ports",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Port",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Port",
+        "notFound": "No Ports found"
+      },
+      "created": "Ένα νέο Port έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Port έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Port έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Port {{ id }};"
+      },
+      "detail": {
+        "title": "Port"
+      },
+      "id": "ID",
+      "name": "Name",
+      "unlocode": "Unlocode"
+    }
+  }
+}

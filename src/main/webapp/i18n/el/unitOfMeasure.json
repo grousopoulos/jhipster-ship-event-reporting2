@@ -1,0 +1,9 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "UnitOfMeasure": {
+      "null": "",
+      "M_TONNES": "M_TONNES",
+      "M3": "M3"
+    }
+  }
+}

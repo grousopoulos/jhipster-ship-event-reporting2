@@ -1,0 +1,58 @@
+{
+  "annotations": {
+    "changelogDate": "20250503083015"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "year",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "co2Gwp",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "methaneGwp",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nitrousGwp",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "targetIntensity",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "baselineIntensity",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "reductionFactorPercent",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "vlsfoEnergyContentPerTonMj",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "vlsfoPenaltyEurPerTon",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "energyAllowanceMultiplier",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "nonBioFuelRewardFactor",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "FuelEuRegulation",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

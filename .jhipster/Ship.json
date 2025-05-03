@@ -1,0 +1,63 @@
+{
+  "annotations": {
+    "changelogDate": "20250503083014"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "callSign",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "iceClassPolarCode",
+      "fieldType": "IceClassPolarCode",
+      "fieldValues": "IA,IA_SUPER,IB,IC,PC1,PC2,PC3,PC4,PC5,PC6,PC7"
+    },
+    {
+      "fieldName": "technicalEfficiencyCode",
+      "fieldType": "TechnicalEfficiencyCode",
+      "fieldValues": "EEDI,EIV,NA"
+    },
+    {
+      "fieldName": "shipType",
+      "fieldType": "ShipType",
+      "fieldValues": "BULK,CHEM,COMB,CONT,CONT_RORO,GAS,GENERAL,LNG,OIL,OTHER,PAX,RCV,ROPAX,RORO,VEH"
+    },
+    {
+      "fieldName": "monitoringMethodCode",
+      "fieldType": "MonitoringMethodCode",
+      "fieldValues": "BDN,BUNKER_TANK,FLOW_METERS,DIRECT"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Ship",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "country",
+      "relationshipName": "ownerCountry",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "flag",
+      "relationshipName": "flag",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "classificationSociety",
+      "relationshipName": "classificationSociety",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

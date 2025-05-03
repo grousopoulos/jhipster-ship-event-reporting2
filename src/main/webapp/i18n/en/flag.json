@@ -1,0 +1,25 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "flag": {
+      "home": {
+        "title": "Flags",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Flag",
+        "createOrEditLabel": "Create or edit a Flag",
+        "notFound": "No Flags found"
+      },
+      "created": "A new Flag is created with identifier {{ param }}",
+      "updated": "A Flag is updated with identifier {{ param }}",
+      "deleted": "A Flag is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Flag {{ id }}?"
+      },
+      "detail": {
+        "title": "Flag"
+      },
+      "id": "ID",
+      "code": "Code",
+      "name": "Name"
+    }
+  }
+}

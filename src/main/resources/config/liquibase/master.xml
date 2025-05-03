@@ -19,7 +19,29 @@
     <property name="timeType" value="time(6)" dbms="mysql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083010_added_entity_Country.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083011_added_entity_Flag.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083012_added_entity_Port.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083013_added_entity_ClassificationSociety.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083014_added_entity_Ship.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083015_added_entity_FuelEuRegulation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083016_added_entity_Voyage.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083017_added_entity_FuelType.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083018_added_entity_BunkerReceivedNote.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083019_added_entity_BunkerReceivedNoteLine.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083020_added_entity_EventReport.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083021_added_entity_ConsumptionLine.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083022_added_entity_Machinery.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083023_added_entity_MachineryOperationLine.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20250503083014_added_entity_constraints_Ship.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083016_added_entity_constraints_Voyage.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083018_added_entity_constraints_BunkerReceivedNote.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083019_added_entity_constraints_BunkerReceivedNoteLine.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083020_added_entity_constraints_EventReport.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083021_added_entity_constraints_ConsumptionLine.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083022_added_entity_constraints_Machinery.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250503083023_added_entity_constraints_MachineryOperationLine.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

@@ -1,0 +1,34 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "fuelEuRegulation": {
+      "home": {
+        "title": "Fuel Eu Regulations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Fuel Eu Regulation",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Fuel Eu Regulation",
+        "notFound": "No Fuel Eu Regulations found"
+      },
+      "created": "Ένα νέο Fuel Eu Regulation έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Fuel Eu Regulation έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Fuel Eu Regulation έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Fuel Eu Regulation {{ id }};"
+      },
+      "detail": {
+        "title": "Fuel Eu Regulation"
+      },
+      "id": "ID",
+      "year": "Year",
+      "co2Gwp": "Co 2 Gwp",
+      "methaneGwp": "Methane Gwp",
+      "nitrousGwp": "Nitrous Gwp",
+      "targetIntensity": "Target Intensity",
+      "baselineIntensity": "Baseline Intensity",
+      "reductionFactorPercent": "Reduction Factor Percent",
+      "vlsfoEnergyContentPerTonMj": "Vlsfo Energy Content Per Ton Mj",
+      "vlsfoPenaltyEurPerTon": "Vlsfo Penalty Eur Per Ton",
+      "energyAllowanceMultiplier": "Energy Allowance Multiplier",
+      "nonBioFuelRewardFactor": "Non Bio Fuel Reward Factor"
+    }
+  }
+}
