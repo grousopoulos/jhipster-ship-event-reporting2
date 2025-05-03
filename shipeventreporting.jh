@@ -1,0 +1,199 @@
+entity Country {
+	code String required maxlength(2)
+	name String required
+}
+
+entity Flag {
+	code String required maxlength(2)
+	name String required
+}
+
+entity Port {
+	name String required
+	unlocode String required maxlength(10)
+    
+}
+
+entity ClassificationSociety {
+	code String required maxlength(10)
+	name String required
+}
+
+entity Ship {
+	name String required
+    callSign String
+    iceClassPolarCode IceClassPolarCode
+    technicalEfficiencyCode TechnicalEfficiencyCode
+    shipType ShipType
+    monitoringMethodCode MonitoringMethodCode
+}
+
+entity FuelEuRegulation {
+	year Integer
+    co2Gwp Integer
+    methaneGwp Integer
+    nitrousGwp Integer
+    targetIntensity BigDecimal
+    baselineIntensity BigDecimal
+    reductionFactorPercent BigDecimal
+    vlsfoEnergyContentPerTonMj BigDecimal
+    vlsfoPenaltyEurPerTon BigDecimal
+    energyAllowanceMultiplier BigDecimal
+    nonBioFuelRewardFactor BigDecimal 
+}
+
+entity Voyage {
+	number String required
+}
+
+entity FuelType {
+	name String required
+	fuelTypeCode FuelTypeCode required
+    carbonFactory BigDecimal required
+}
+
+entity BunkerReceivedNote {
+	documentDateAndTime ZonedDateTime required
+	documentDisplayNumber String
+}
+
+entity BunkerReceivedNoteLine {
+	quantity BigDecimal required
+    unitOfMeasure UnitOfMeasure required
+    lowerCalorificValue BigDecimal
+    sulphurContent BigDecimal
+    density BigDecimal
+    viscosity BigDecimal
+    waterContent BigDecimal
+}
+
+entity EventReport {
+	documentDateAndTime ZonedDateTime required
+	speedGps BigDecimal
+	documentDisplayNumber String
+    leg Integer
+    distanceTravelled BigDecimal
+    hoursUnderway BigDecimal
+    eventStatus EventStatus required
+    loadingCondition LoadingCondition required
+    cargoCarried BigDecimal
+    coordinatesLatitude String pattern(/([0-8][0-9]|90)([0-5][0-9]|60)(N|S)/)
+    coordinatesLongitude String pattern(/(0[0-9][0-9]|1[0-7][0-9]|180)([0-5][0-9]|60)(W|E)/)
+    shipsHeading String
+    beaufortNo Integer
+    weatherCondition String
+    swell Boolean
+}
+
+entity ConsumptionLine {
+	quantity BigDecimal required
+    unitOfMeasure UnitOfMeasure required
+    co2EmissionSourceTypeCode Co2EmissionSourceTypeCode
+    lowerCalorificValue BigDecimal
+    sulphurContent BigDecimal
+    density BigDecimal
+    viscosity BigDecimal
+    waterContent BigDecimal
+    portActivityCode PortActivityCode
+    diffCriterionCode DiffCriterionCode
+}
+
+entity Machinery {
+	name String required
+}
+
+entity MachineryOperationLine {
+	runningHours BigDecimal required
+    powerOutput BigDecimal
+    averageRpm BigDecimal
+}
+
+enum MonitoringMethodCode {
+	BDN, BUNKER_TANK, FLOW_METERS, DIRECT
+}
+
+enum Co2EmissionSourceTypeCode {
+	AUX_ENGINE, BOILER, GAS_TURBINE, INERT_GAS_GENERATOR, MAIN_ENGINE
+}
+
+enum PortActivityCode {
+	AT_BERTH, MOVEMENT
+}
+
+enum DiffCriterionCode {
+	ON_BALLAST, ON_LADEN, CARGO_HEATING, DYNAMIC_POSITIONING, PASSENGER_TRANSPORT, FREIGHT_TRANSPORT
+}
+
+enum LoadingCondition {
+	LADEN, BALLAST
+}
+
+enum IceClassPolarCode {
+	IA, IA_SUPER, IB, IC, PC1, PC2, PC3, PC4, PC5, PC6, PC7
+}
+
+enum ShipType {
+	BULK, CHEM, COMB, CONT, CONT_RORO, GAS, GENERAL, LNG, OIL, OTHER, PAX, RCV, ROPAX, RORO, VEH
+}
+
+enum EventStatus {
+	DEPARTURE,
+    ARRIVAL,
+    NOON,
+    SOSP,
+    EOSP,
+    ANCHOR START,
+    SHIFTING START,
+    DRIFTING START,
+    TRANSIT START,
+    CONVOY START,
+    DETAINING START,
+    ANCHOR END,
+    SHIFTING END,
+    DRIFTING END,
+    TRANSIT END,
+    CONVOY END,
+    DETAINING END,
+    OTHER
+}
+
+enum TechnicalEfficiencyCode {
+	EEDI, EIV, NA
+}
+
+enum FuelTypeCode {
+	MDO, ETHANOL, MGO, HFO, LFO, LNG, LPG_BUTANE, LPG_PROPANE, METHANOL, OTHER
+}
+
+enum UnitOfMeasure {
+    M_TONNES, M3
+}
+
+enum CargoFieldCode {
+	CARGO_MASS_TRANSPORT_WORK_MASS, CARGO_VOLUME_TRANSPORT_WORK_VOLUME, CARGO_DWT_TRANSPORT_WORK_DWT, NO_OF_PASSENGERS_TRANSPORT_WORK_PAX, CARGO_MASS_TRANSPORT_WORK_FREIGHT
+}
+
+enum PortActivityCode {
+	AT_BERTH, MOVEMENT
+}
+
+relationship ManyToOne {
+	Ship{ownerCountry} to Country
+    Ship{flag} to Flag
+    Ship{classificationSociety} to ClassificationSociety
+    Machinery{ship} to Ship
+    Voyage{ship required} to Ship
+    BunkerReceivedNote{voyage required} to Voyage
+    BunkerReceivedNoteLine{bunkerReceivedNote required} to BunkerReceivedNote{lines}
+    BunkerReceivedNoteLine{fuelType required} to FuelType
+    EventReport{voyage required} to Voyage
+    ConsumptionLine{EventReport required} to EventReport{lines}
+    ConsumptionLine{fuelType required} to FuelType
+    MachineryOperationLine{EventReport required} to EventReport{operationLines}
+}
+
+dto all with mapstruct
+service all with serviceClass
+paginate Country, Flag, Port, ClassificationSociety, FuelType with pagination
+paginate Ship, Voyage, BunkerReceivedNote, EventReport with infinite-scroll
+filter all
