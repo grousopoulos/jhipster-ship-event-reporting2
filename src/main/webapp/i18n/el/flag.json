@@ -1,0 +1,25 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "flag": {
+      "home": {
+        "title": "Flags",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Flag",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Flag",
+        "notFound": "No Flags found"
+      },
+      "created": "Ένα νέο Flag έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Flag έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Flag έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Flag {{ id }};"
+      },
+      "detail": {
+        "title": "Flag"
+      },
+      "id": "ID",
+      "code": "Code",
+      "name": "Name"
+    }
+  }
+}

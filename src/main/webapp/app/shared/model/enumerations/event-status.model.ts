@@ -1,0 +1,29 @@
+export enum EventStatus {
+  DEPARTURE = 'DEPARTURE',
+
+  ARRIVAL = 'ARRIVAL',
+
+  NOON = 'NOON',
+
+  SOSP = 'SOSP',
+
+  EOSP = 'EOSP',
+
+  ANCHOR = 'ANCHOR',
+
+  START = 'START',
+
+  SHIFTING = 'SHIFTING',
+
+  DRIFTING = 'DRIFTING',
+
+  TRANSIT = 'TRANSIT',
+
+  CONVOY = 'CONVOY',
+
+  DETAINING = 'DETAINING',
+
+  END = 'END',
+
+  OTHER = 'OTHER',
+}

@@ -1,0 +1,9 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "PortActivityCode": {
+      "null": "",
+      "AT_BERTH": "AT_BERTH",
+      "MOVEMENT": "MOVEMENT"
+    }
+  }
+}

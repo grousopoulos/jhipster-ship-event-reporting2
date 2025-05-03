@@ -1,0 +1,25 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "machinery": {
+      "home": {
+        "title": "Machinery",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Machinery",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Machinery",
+        "notFound": "No Machinery found"
+      },
+      "created": "Ένα νέο Machinery έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Machinery έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Machinery έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Machinery {{ id }};"
+      },
+      "detail": {
+        "title": "Machinery"
+      },
+      "id": "ID",
+      "name": "Name",
+      "ship": "Ship"
+    }
+  }
+}

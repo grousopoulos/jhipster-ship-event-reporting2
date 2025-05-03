@@ -1,0 +1,32 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "bunkerReceivedNoteLine": {
+      "home": {
+        "title": "Bunker Received Note Lines",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bunker Received Note Line",
+        "createOrEditLabel": "Create or edit a Bunker Received Note Line",
+        "notFound": "No Bunker Received Note Lines found"
+      },
+      "created": "A new Bunker Received Note Line is created with identifier {{ param }}",
+      "updated": "A Bunker Received Note Line is updated with identifier {{ param }}",
+      "deleted": "A Bunker Received Note Line is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bunker Received Note Line {{ id }}?"
+      },
+      "detail": {
+        "title": "Bunker Received Note Line"
+      },
+      "id": "ID",
+      "quantity": "Quantity",
+      "unitOfMeasure": "Unit Of Measure",
+      "lowerCalorificValue": "Lower Calorific Value",
+      "sulphurContent": "Sulphur Content",
+      "density": "Density",
+      "viscosity": "Viscosity",
+      "waterContent": "Water Content",
+      "bunkerReceivedNote": "Bunker Received Note",
+      "fuelType": "Fuel Type"
+    }
+  }
+}

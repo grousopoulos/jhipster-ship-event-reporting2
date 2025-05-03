@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity BunkerReceivedNoteLine.
+    -->
+    <changeSet id="20250503083019-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="bunker_received_note_id"
+                                 baseTableName="bunker_received_note_line"
+                                 constraintName="fk_bunker_received_note_line__bunker_received_note_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="bunker_received_note"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="fuel_type_id"
+                                 baseTableName="bunker_received_note_line"
+                                 constraintName="fk_bunker_received_note_line__fuel_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="fuel_type"
+                                 />
+    </changeSet>
+</databaseChangeLog>

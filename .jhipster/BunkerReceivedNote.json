@@ -1,0 +1,39 @@
+{
+  "annotations": {
+    "changelogDate": "20250503083018"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "documentDateAndTime",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "documentDisplayNumber",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "BunkerReceivedNote",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "voyage",
+      "relationshipName": "voyage",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "bunkerReceivedNoteLine",
+      "otherEntityRelationshipName": "bunkerReceivedNote",
+      "relationshipName": "lines",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

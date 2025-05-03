@@ -1,0 +1,27 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "machineryOperationLine": {
+      "home": {
+        "title": "Machinery Operation Lines",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Machinery Operation Line",
+        "createOrEditLabel": "Create or edit a Machinery Operation Line",
+        "notFound": "No Machinery Operation Lines found"
+      },
+      "created": "A new Machinery Operation Line is created with identifier {{ param }}",
+      "updated": "A Machinery Operation Line is updated with identifier {{ param }}",
+      "deleted": "A Machinery Operation Line is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Machinery Operation Line {{ id }}?"
+      },
+      "detail": {
+        "title": "Machinery Operation Line"
+      },
+      "id": "ID",
+      "runningHours": "Running Hours",
+      "powerOutput": "Power Output",
+      "averageRpm": "Average Rpm",
+      "eventReport": "Event Report"
+    }
+  }
+}

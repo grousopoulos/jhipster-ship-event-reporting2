@@ -1,0 +1,11 @@
+export enum Co2EmissionSourceTypeCode {
+  AUX_ENGINE = 'AUX_ENGINE',
+
+  BOILER = 'BOILER',
+
+  GAS_TURBINE = 'GAS_TURBINE',
+
+  INERT_GAS_GENERATOR = 'INERT_GAS_GENERATOR',
+
+  MAIN_ENGINE = 'MAIN_ENGINE',
+}

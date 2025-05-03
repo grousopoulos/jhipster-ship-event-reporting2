@@ -1,0 +1,36 @@
+{
+  "annotations": {
+    "changelogDate": "20250503083023"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "runningHours",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "powerOutput",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "averageRpm",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "MachineryOperationLine",
+  "relationships": [
+    {
+      "otherEntityName": "eventReport",
+      "otherEntityRelationshipName": "operationLines",
+      "relationshipName": "eventReport",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

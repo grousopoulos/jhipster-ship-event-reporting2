@@ -1,0 +1,31 @@
+export enum ShipType {
+  BULK = 'BULK',
+
+  CHEM = 'CHEM',
+
+  COMB = 'COMB',
+
+  CONT = 'CONT',
+
+  CONT_RORO = 'CONT_RORO',
+
+  GAS = 'GAS',
+
+  GENERAL = 'GENERAL',
+
+  LNG = 'LNG',
+
+  OIL = 'OIL',
+
+  OTHER = 'OTHER',
+
+  PAX = 'PAX',
+
+  RCV = 'RCV',
+
+  ROPAX = 'ROPAX',
+
+  RORO = 'RORO',
+
+  VEH = 'VEH',
+}

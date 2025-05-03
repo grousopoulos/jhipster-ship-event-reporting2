@@ -1,0 +1,76 @@
+{
+  "annotations": {
+    "changelogDate": "20250503083021"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "quantity",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "unitOfMeasure",
+      "fieldType": "UnitOfMeasure",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "M_TONNES,M3"
+    },
+    {
+      "fieldName": "co2EmissionSourceTypeCode",
+      "fieldType": "Co2EmissionSourceTypeCode",
+      "fieldValues": "AUX_ENGINE,BOILER,GAS_TURBINE,INERT_GAS_GENERATOR,MAIN_ENGINE"
+    },
+    {
+      "fieldName": "lowerCalorificValue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "sulphurContent",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "density",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "viscosity",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "waterContent",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "portActivityCode",
+      "fieldType": "PortActivityCode",
+      "fieldValues": "AT_BERTH,MOVEMENT"
+    },
+    {
+      "fieldName": "diffCriterionCode",
+      "fieldType": "DiffCriterionCode",
+      "fieldValues": "ON_BALLAST,ON_LADEN,CARGO_HEATING,DYNAMIC_POSITIONING,PASSENGER_TRANSPORT,FREIGHT_TRANSPORT"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "ConsumptionLine",
+  "relationships": [
+    {
+      "otherEntityName": "eventReport",
+      "otherEntityRelationshipName": "lines",
+      "relationshipName": "eventReport",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "fuelType",
+      "relationshipName": "fuelType",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

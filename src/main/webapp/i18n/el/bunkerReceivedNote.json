@@ -1,0 +1,27 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "bunkerReceivedNote": {
+      "home": {
+        "title": "Bunker Received Notes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Bunker Received Note",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Bunker Received Note",
+        "notFound": "No Bunker Received Notes found"
+      },
+      "created": "Ένα νέο Bunker Received Note έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Bunker Received Note έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Bunker Received Note έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Bunker Received Note {{ id }};"
+      },
+      "detail": {
+        "title": "Bunker Received Note"
+      },
+      "id": "ID",
+      "documentDateAndTime": "Document Date And Time",
+      "documentDisplayNumber": "Document Display Number",
+      "voyage": "Voyage",
+      "lines": "Lines"
+    }
+  }
+}

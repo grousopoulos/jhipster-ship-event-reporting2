@@ -45,6 +45,23 @@ public class CacheConfiguration {
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.Country.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.Flag.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.Port.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.ClassificationSociety.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.Ship.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.FuelEuRegulation.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.Voyage.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.FuelType.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.BunkerReceivedNote.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.BunkerReceivedNote.class.getName() + ".lines");
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.BunkerReceivedNoteLine.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.EventReport.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.EventReport.class.getName() + ".lines");
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.EventReport.class.getName() + ".operationLines");
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.ConsumptionLine.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.Machinery.class.getName());
+            createCache(cm, com.falaisia.ship.eventreporting2.domain.MachineryOperationLine.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

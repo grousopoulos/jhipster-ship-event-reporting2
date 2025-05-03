@@ -1,0 +1,32 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "ship": {
+      "home": {
+        "title": "Ships",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Ship",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Ship",
+        "notFound": "No Ships found"
+      },
+      "created": "Ένα νέο Ship έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Ship έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Ship έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Ship {{ id }};"
+      },
+      "detail": {
+        "title": "Ship"
+      },
+      "id": "ID",
+      "name": "Name",
+      "callSign": "Call Sign",
+      "iceClassPolarCode": "Ice Class Polar Code",
+      "technicalEfficiencyCode": "Technical Efficiency Code",
+      "shipType": "Ship Type",
+      "monitoringMethodCode": "Monitoring Method Code",
+      "ownerCountry": "Owner Country",
+      "flag": "Flag",
+      "classificationSociety": "Classification Society"
+    }
+  }
+}

@@ -7,7 +7,21 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "country": "Country",
+        "flag": "Flag",
+        "port": "Port",
+        "classificationSociety": "Classification Society",
+        "ship": "Ship",
+        "fuelEuRegulation": "Fuel Eu Regulation",
+        "voyage": "Voyage",
+        "fuelType": "Fuel Type",
+        "bunkerReceivedNote": "Bunker Received Note",
+        "bunkerReceivedNoteLine": "Bunker Received Note Line",
+        "eventReport": "Event Report",
+        "consumptionLine": "Consumption Line",
+        "machinery": "Machinery",
+        "machineryOperationLine": "Machinery Operation Line"
       },
       "account": {
         "main": "Λογαριασμός",

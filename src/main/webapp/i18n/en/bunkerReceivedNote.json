@@ -1,0 +1,27 @@
+{
+  "jhipsterShipEventReporting2App": {
+    "bunkerReceivedNote": {
+      "home": {
+        "title": "Bunker Received Notes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bunker Received Note",
+        "createOrEditLabel": "Create or edit a Bunker Received Note",
+        "notFound": "No Bunker Received Notes found"
+      },
+      "created": "A new Bunker Received Note is created with identifier {{ param }}",
+      "updated": "A Bunker Received Note is updated with identifier {{ param }}",
+      "deleted": "A Bunker Received Note is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bunker Received Note {{ id }}?"
+      },
+      "detail": {
+        "title": "Bunker Received Note"
+      },
+      "id": "ID",
+      "documentDateAndTime": "Document Date And Time",
+      "documentDisplayNumber": "Document Display Number",
+      "voyage": "Voyage",
+      "lines": "Lines"
+    }
+  }
+}
